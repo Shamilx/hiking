@@ -1,0 +1,74 @@
+body,html,* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{ 
+    --my-primary-color: #004161;
+    --my-light-primary-color: #224360;
+
+}
+
+.nav-link {
+    color: var(--my-light-primary-color);
+    transition: font-weight .1s ease,color .3s ease,transform .3s ease,letter-spacing .3s ease;
+}
+
+.nav-modal-item {
+    margin: 1.5rem 0;
+}
+
+.nav-modal-link {
+    color: var(--my-light-primary-color);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.nav-link:hover {
+    color: var(--my-primary-color);
+    font-weight: 800;
+    transform: scale(1.1);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--my-primary-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#navbar-toggler {
+    color: var(--my-light-primary-color);
+}
+
+
+.modal-dialog {
+  animation: expand-modal 0.3s ease-in-out;
+}
+
+
+@keyframes expand-modal {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
