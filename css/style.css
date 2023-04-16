@@ -74,6 +74,17 @@ body,html,* {
     background-position: center center;
 }
 
+#header-title {
+    color: var(--my-light-primary-color);
+    margin-top: 8rem;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    #header-title {
+        margin-top: 4rem;
+    }
+}
 @keyframes expand-modal {
   0% {
     width: 0%;
