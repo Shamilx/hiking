@@ -4,11 +4,17 @@ body,html,* {
     box-sizing: border-box;
 }
 
-:root{ 
+body {
+    background-color: #fbfbf5;
+}
+
+:root{
     --my-primary-color: #004161;
     --my-light-primary-color: #224360;
-
 }
+
+/* Root CSS End */
+
 
 .nav-link {
     font-weight: 300;
@@ -53,10 +59,6 @@ body,html,* {
     transform-origin: bottom left;
 }
 
-#navbar-toggler {
-    color: var(--my-light-primary-color);
-}
-
 
 .modal-dialog {
   animation: expand-modal 0.3s ease-in-out;
@@ -71,14 +73,53 @@ body,html,* {
     background-image: url('../img/header_background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
 }
+
+.recover-list {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.recover-list li::before {
+    content: '-';
+    padding-right: 5px;
+}
+
+/* Class Selectors End */
 
 #header-title {
     color: var(--my-light-primary-color);
     margin-top: 8rem;
     position: relative;
 }
+
+#navbar-toggler {
+    color: var(--my-light-primary-color);
+}
+
+#recover {
+    color: var(--my-light-primary-color);
+}
+
+#show-more {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: var(--my-primary-color);
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+}
+
+#show-more:hover {
+    background-color: var(--my-primary-color);
+    color: white;
+
+}
+/* ID Selectors END */
 
 @media screen and (max-width: 768px) {
     #header-title {

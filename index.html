@@ -73,10 +73,62 @@
                 </div>
             </div>
         </header>
-
-
-        <main></main>
     </div>
+
+    <main>
+        <div class="container mt-5" id="recover">
+            <div class="col-8 col-md-6 col-lg-4">
+                <p class="fs-1 text-uppercase fw-bold m-0">How to recover from a hike</p>
+                <img src="img/recover-title-design.png" width="60px">
+            </div>
+
+            <div class="row gx-5 mt-5">
+                <div class="col-md-6 mt-5 ms-2 ms-md-0">
+                    <p class="text-uppercase fw-bold fs-1">Day 1.</p>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-8 d-flex align-items-center">
+                                <ul class="recover-list">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Repellat cum earum assumenda dolor.</li>
+                                    <li>Quod doloremque sapiente amet rerum aut ipsa.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-4 mt-md-0 d-flex justify-content-center d-md-block">
+                                <img src="img/header-row-first-img.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 ms-2 ms-md-0">
+                    <p class="text-uppercase fw-bold fs-1">Day 2.</p>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-8 d-flex align-items-center">
+                                <ul class="recover-list">
+                                    <li>Repellat cum earum assumenda dolor.</li>
+                                    <li>Quod doloremque sapiente amet rerum aut ipsa.</li>
+                                    <li>Suscipit, corrupti.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-4 mt-md-0 d-flex justify-content-center d-md-block">
+                                <img src="img/header-row-second-img.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center mt-5">
+                <button class="" id="show-more" data-bs-toggle="tooltip" data-bs-title="Show more"
+                    data-bs-trigger="hover" data-bs-custom-class="custom-tooltip">
+                    <i class="dropdown-toggle"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
     <!--Bootstrap 5.3 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
@@ -88,6 +140,7 @@
         // Enabling Tooltips
         const toolTips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         const toolTipTriggerList = [...toolTips].map(x => new bootstrap.Tooltip(x));
+
     </script>
 </body>
 
