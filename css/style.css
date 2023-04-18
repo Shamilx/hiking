@@ -86,6 +86,11 @@ body {
     padding-right: 5px;
 }
 
+.recover-more {
+    border-color: var(--my-primary-color) !important;
+    color: var(--my-primary-color);
+}
+
 /* Class Selectors End */
 
 #header-title {
