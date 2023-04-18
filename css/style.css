@@ -122,7 +122,10 @@ body {
 #show-more:hover {
     background-color: var(--my-primary-color);
     color: white;
+}
 
+#show-more-icon {
+    transition: transform .3s ease;
 }
 /* ID Selectors END */
 

@@ -158,7 +158,7 @@
             <div class="d-flex justify-content-center mt-5">
                 <button class="" id="show-more" data-bs-toggle="collapse" data-bs-target=".recover-more"
                     data-bs-custom-class="custom-tooltip">
-                    <i class="dropdown-toggle"></i>
+                    <i class="dropdown-toggle d-inline-block" id="show-more-icon"></i>
                 </button>
             </div>
             <!-- Show more button end. -->
@@ -177,6 +177,18 @@
         // Enabling Tooltips
         const toolTips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         const toolTipTriggerList = [...toolTips].map(x => new bootstrap.Tooltip(x));
+
+        const showMoreButton = document.getElementById('show-more');
+        const showMoreButtonIcon = document.getElementById('show-more-icon');
+
+        showMoreButton.addEventListener('click', function () {
+
+            if (showMoreButtonIcon.style.transform == 'rotate(-180deg)') {
+                showMoreButtonIcon.style.transform = 'rotate(0deg)';
+            } else {
+                showMoreButtonIcon.style.transform = 'rotate(-180deg)';
+            }
+        });
 
     </script>
 </body>
