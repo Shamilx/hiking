@@ -1,3 +1,3 @@
 # Hiking
 
-<a href="://shamilx.github.io/hiking">Hiking</a>
+<a href="https://shamilx.github.io/hiking/">Hiking</a>
