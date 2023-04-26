@@ -91,6 +91,10 @@ body {
     color: var(--my-primary-color);
 }
 
+.big-bend-see-more {
+    color: var(--my-primary-color);
+}
+
 /* Class Selectors End */
 
 #header-title {
@@ -127,6 +131,21 @@ body {
 #show-more-icon {
     transition: transform .3s ease;
 }
+
+#big-bend {
+    height: 550px;
+    background-image: url('../img/big-bend-background.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#big-bend-title {
+    position: relative;
+}
+
 /* ID Selectors END */
 
 @media screen and (max-width: 768px) {
