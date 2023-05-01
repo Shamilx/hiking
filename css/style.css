@@ -135,7 +135,7 @@ body {
 #big-bend {
     height: 750px;
     background-image: url('../img/big-bend-background.png');
-    background-position: center top;
+    background-position: 60% center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -146,6 +146,12 @@ body {
     position: relative;
 }
 
+#rock-climbing {
+    background-image: url('../img/rock_climbing_background.png');
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* ID Selectors END */
 
 @media screen and (max-width: 768px) {
