@@ -70,7 +70,7 @@ body {
 
 .for-background {
     height: 100vh;
-    background-image: url('../img/header_background.png');
+    background-image: url('../img/header/header_background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -93,6 +93,12 @@ body {
 
 .big-bend-see-more {
     color: var(--my-primary-color);
+}
+
+.rock-climbing-title {
+    color: var(--my-primary-color);
+    position: relative;
+
 }
 
 /* Class Selectors End */
@@ -134,7 +140,7 @@ body {
 
 #big-bend {
     height: 750px;
-    background-image: url('../img/big-bend-background.png');
+    background-image: url('../img/big_bend/big-bend-background.png');
     background-position: 60% center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,10 +153,10 @@ body {
 }
 
 #rock-climbing {
-    background-image: url('../img/rock_climbing_background.png');
-    background-position: 80% center;
+    background-image: url('../img/rock_climbing/rock_climbing_background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 80% center;
 }
 /* ID Selectors END */
 
@@ -159,6 +165,7 @@ body {
         margin-top: 4rem;
     }
 }
+
 @keyframes expand-modal {
   0% {
     width: 0%;
